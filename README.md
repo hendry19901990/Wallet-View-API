@@ -5,15 +5,15 @@ Designing the Wallet View API for displaying wallet asset balances in a given cr
 
 ### 1. API Endpoints:
 
-GET `/wallet/balance?wallet_address=0x23A&cryptocurrency=DOT`: This endpoint will receive user input in the query path containing the wallet address and the desired cryptocurrency. It will return the wallet's asset balances in the specified cryptocurrency.
+GET `/wallet/balance?wallet_address=0x23A&cryptocurrency=BNB`: This endpoint will receive user input in the query path containing the wallet address and the desired cryptocurrency. It will return the wallet's asset balances in the specified cryptocurrency.
 Data Structures:
 
-WalletBalanceRequest (JSON input):
+WalletBalanceRequest (Query path):
 
 ```json
 {
   "wallet_address": "0x23A...",
-  "cryptocurrency": "DOT"
+  "cryptocurrency": "BNB"
 }
 ```
 
@@ -21,18 +21,12 @@ WalletBalanceResponse (JSON output):
 
 ```json
 {
-  "wallet_address": "0x23A...",
-  "cryptocurrency": "DOT",
+  "wallet_address": "0x18b2a687610328590bc8f2e5fedde3b582a49cda",
+  "cryptocurrency": "BNB",
   "balances": [
     {
-      "symbol": "ETH",
-      "balance": 1.0,
-      "value_in_cryptocurrency": 123.45
-    },
-    {
-      "symbol": "AAVE",
-      "balance": 2.5,
-      "value_in_cryptocurrency": 67.89
+      "balance": "1.116063312048596 ETH",
+      "valueInCryptocurrency":"216.96254706179266 BNB"
     }
   ]
 }
@@ -74,7 +68,7 @@ curl "http://localhost:3000/wallet/balance?wallet_address=0x18b2a687610328590bc8
 output:
 ```bash
 {
-  "wallet_address": "0xd7264b644277cebd9f33973d8c8aee2b68916a7e76742b86e68bc02348e50cec",
+  "wallet_address": "0x18b2a687610328590bc8f2e5fedde3b582a49cda",
   "cryptocurrency": "BNB",
   "balances": [
     {
