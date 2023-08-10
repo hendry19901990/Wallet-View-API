@@ -55,6 +55,7 @@ app.get('/wallet/balance', async (req, res) => {
 
         const response_data = {
             wallet_address,
+            cryptocurrency,
             balances
         };
         
