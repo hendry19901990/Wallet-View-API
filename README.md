@@ -68,24 +68,18 @@ API_TOKEN='7925...'
 
 ### 3. Test it
 ```bash
-curl "http://localhost:3000/wallet/balance?wallet_address=0x18b2a687610328590bc8f2e5fedde3b582a49cda&cryptocurrency=DOT"
+curl "http://localhost:3000/wallet/balance?wallet_address=0x18b2a687610328590bc8f2e5fedde3b582a49cda&cryptocurrency=BNB"
 ```
 
 output:
 ```bash
 {
   "wallet_address": "0xd7264b644277cebd9f33973d8c8aee2b68916a7e76742b86e68bc02348e50cec",
-  "cryptocurrency": "DOT",
+  "cryptocurrency": "BNB",
   "balances": [
     {
-      "symbol": "ETH",
-      "balance": 1.0,
-      "value_in_cryptocurrency": 123.45
-    },
-    {
-      "symbol": "AAVE",
-      "balance": 2.5,
-      "value_in_cryptocurrency": 67.89
+      "balance": "1.116063312048596 ETH",
+      "valueInCryptocurrency":"216.96254706179266 BNB"
     }
   ]
 }
