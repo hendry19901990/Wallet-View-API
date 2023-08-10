@@ -68,7 +68,7 @@ API_TOKEN='7925...'
 
 ### 3. Test it
 ```bash
-curl "http://localhost:3000/wallet/balance?wallet_address=0xd7264b644277cebd9f33973d8c8aee2b68916a7e76742b86e68bc02348e50cec&cryptocurrency=DOT"
+curl "http://localhost:3000/wallet/balance?wallet_address=0x18b2a687610328590bc8f2e5fedde3b582a49cda&cryptocurrency=DOT"
 ```
 
 output:
